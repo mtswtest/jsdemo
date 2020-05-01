@@ -3,34 +3,37 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Reader Demo</title>
+    <title>Web Socket Testing</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
- 
+
 <body>
     <div id="container">
         <div id="sidebar">
             <fieldset>
-                <legend>Readers
-                    <button id="refreshDeviceList">Scan</button>
-                </legend> 
+                <legend>History
+                    <button id="clearHistory">Clear</button>
+                </legend>
                 <ul id="history">
                 </ul>
-				
-				<div>
-				  <input type="radio" id="DeviceType" name="DynaFlexUSBHID" value="DynaFlexUSBHID"
-						 checked>
-				  <label>DynaFlex USB/HID</label>
-				  </div>
-				  <div>
-				  <input type="radio" id="DeviceType" name="DynaFlexWebSocket" value="DynaFlexWebSocket">
-				  <label>DynaFlex WebSocket</label>
-				</div>
             </fieldset>
         </div>
         <div id="content">
             <fieldset>
-                <legend>Selected Reader</legend>
+                <legend>Devices
+                    <button id="scanDevices">Devices</button>
+                </legend>
+				<div>
+				  <input type="radio" id="DeviceType" name="DynaFlexUSBHID" value="DynaFlexUSBHID"
+						 checked>
+				  <label>DynaFlex USB/HID</label>
+				  <input type="radio" id="DeviceType" name="DynaFlexWebSocket" value="DynaFlexWebSocket">
+				  <label>DynaFlex WebSocket</label>
+				</div>
+            </fieldset>
+        		
+            <fieldset>
+                <legend>URL</legend>
                 <div>
                     <input type="text" id="serverUrl" value="ws://example.com/websocket" width="500px" />
                     <button id="connectButton">Open</button>
