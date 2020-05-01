@@ -14,8 +14,19 @@
                 <legend>Readers
                     <button id="refreshDeviceList">Scan</button>
                 </legend>
-                <ul id="deviceList">
+                <ul id="history">
                 </ul>
+				
+				<div>
+				  <input type="radio" id="hid" name="hid" value="hid"
+						 checked>
+				  <label for="hid">DynaFlex USB/HID</label>
+				</div>
+
+				<div>
+				  <input type="radio" id="ws" name="ws" value="ws">
+				  <label for="ws">DynaFlex WebSocket</label>
+				</div>
             </fieldset>
         </div>
         <div id="content">
